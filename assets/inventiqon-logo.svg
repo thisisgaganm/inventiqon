@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="title desc">
+  <title id="title">INVENTIQON Logo</title>
+  <desc id="desc">A geometric microchip and circuit symbol beside the INVENTIQON wordmark.</desc>
+  <rect x="3" y="3" width="634" height="174" rx="26" fill="#fff" stroke="#25d9f5" stroke-opacity=".45" stroke-width="6"/>
+  <g transform="translate(24 24)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M45 0v18M75 0v18M105 0v18M135 0v18M45 114v18M75 114v18M105 114v18M135 114v18M0 45h18M0 75h18M0 105h18M0 135h18M162 45h-18M162 75h-18M162 105h-18M162 135h-18" stroke="#08bfe3" stroke-width="8"/>
+    <rect x="26" y="26" width="110" height="110" rx="15" fill="#011539" stroke="#08bfe3" stroke-width="7"/>
+    <rect x="48" y="48" width="66" height="66" rx="8" stroke="#fff" stroke-width="5"/>
+    <path d="M61 81h40M81 61v40" stroke="#08bfe3" stroke-width="6"/>
+    <circle cx="81" cy="81" r="8" fill="#d70000" stroke="none"/>
+  </g>
+  <text x="218" y="93" fill="#011539" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="800" letter-spacing="1.5">INVENTIQON</text>
+  <path d="M220 115h380" stroke="#08bfe3" stroke-width="3"/>
+  <text x="221" y="146" fill="#27405e" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="4">HARDWARE INNOVATION</text>
+</svg>

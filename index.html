@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#011539">
+  <link rel="icon" type="image/svg+xml" href="assets/images/inventiqon-favicon.svg">
+  <meta name="description" content="INVENTIQON is a 36-hour hardware hackathon at Dayananda Sagar University, Bengaluru, on 19–20 November 2026.">
+  <title>INVENTIQON | Hardware, in motion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/animations.js"></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="home">
+  <p class="visually-hidden" data-loader-announcement role="status" aria-live="polite" aria-atomic="true">Preparing the INVENTIQON experience.</p>
+  <div class="system-loader" data-system-loader data-loader-stage="0" aria-hidden="true">
+    <div class="loader-grid"></div>
+    <div class="loader-light-sweep"></div>
+    <svg class="loader-circuit" viewBox="0 0 1440 900" preserveAspectRatio="none" focusable="false">
+      <g class="loader-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-20 260h220l58 58h175l50-50h155" />
+        <path d="M1460 210h-196l-74 74h-110l-45 45h-95" />
+        <path d="M-20 650h242l82-82h132l55-55h112" />
+        <path d="M1460 690h-244l-72-72h-105l-64-64h-93" />
+        <path d="M720 -20v135l-44 44v96" />
+        <path d="M720 920V790l54-54v-92" />
+      </g>
+      <g class="loader-nodes">
+        <circle cx="200" cy="260" r="4" /><circle cx="638" cy="326" r="4" />
+        <circle cx="1176" cy="210" r="4" /><circle cx="940" cy="374" r="4" />
+        <circle cx="222" cy="650" r="4" /><circle cx="603" cy="513" r="4" />
+        <circle cx="1216" cy="690" r="4" /><circle cx="882" cy="554" r="4" />
+        <circle cx="720" cy="211" r="4" /><circle cx="774" cy="644" r="4" />
+      </g>
+    </svg>
+    <div class="loader-content">
+      <p class="loader-kicker">HARDWARE / DEEP TECH / 2026</p>
+      <img class="loader-logo" src="assets/images/inventiqon-logo.svg" alt="INVENTIQON Logo">
+      <p class="loader-subtitle">36-HOUR HARDWARE HACKATHON</p>
+      <p class="loader-host">DAYANANDA SAGAR UNIVERSITY <span aria-hidden="true">·</span> BENGALURU</p>
+      <div class="loader-power" aria-hidden="true">
+        <div class="loader-track"><span class="loader-track-fill"></span><i></i><i></i><i></i><i></i></div>
+        <div class="loader-stages">
+          <span class="is-current">INITIALIZING SYSTEM</span>
+          <span>CALIBRATING CIRCUITS</span>
+          <span>SYSTEM READY</span>
+        </div>
+      </div>
+    </div>
+    <span class="loader-scanline" aria-hidden="true"></span>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="page-top" data-site-header>
+    <a class="brand" href="index.html" aria-label="INVENTIQON home">
+      <span class="institution-logos">
+        <span class="institution-logo-item"><img class="institution-logo-image" src="assets/images/logos/dsu-logo.png" alt="Dayananda Sagar University logo"><span class="institution-logo-name"></span></span>
+        <span class="institution-logo-item"><img class="institution-logo-image" src="assets/images/logos/ece-club-logo.png" alt="ECE Technical Club logo"><span class="institution-logo-name"></span></span>
+      </span>
+      <img class="brand-logo" src="assets/images/inventiqon-logo.svg" alt="INVENTIQON Logo">
+    </a>
+    <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+      <div class="nav-links">
+        <a class="nav-link" data-nav="home" href="index.html">Home</a>
+        <a class="nav-link" data-nav="event" href="event.html">Event</a>
+        <a class="nav-link" data-nav="timeline" href="timeline.html">Timeline</a>
+        <a class="nav-link" data-nav="committee" href="committee.html">Committee</a>
+        <a class="nav-link" data-nav="faq" href="faq.html">FAQ</a>
+        <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="button button-primary nav-register" data-registration-trigger data-registration-message="nav-registration-status" type="button" aria-describedby="nav-registration-status">
+          <span>REGISTER</span>
+          <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false"><path d="M3.5 10h12m-5-5 5 5-5 5" /></svg>
+        </button>
+        <span class="nav-registration-note visually-hidden" id="nav-registration-status" data-registration-status role="status" aria-live="polite" aria-atomic="true">Registration will open once the official Google Form link is configured.</span>
+      </div>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section page-shell" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true"></div>
+      <div class="hero-copy reveal-stagger">
+        <p class="eyebrow" data-reveal><span class="signal-dot" aria-hidden="true"></span> ENGINEER THE NEXT FRONTIER</p>
+        <h1 class="hero-title" id="hero-title" data-reveal>INVENTIQON</h1>
+        <p class="hero-event-type" data-reveal>36-HOUR HARDWARE HACKATHON</p>
+        <p class="hero-host" data-reveal>DAYANANDA SAGAR UNIVERSITY <span aria-hidden="true">·</span> BENGALURU</p>
+        <p class="hero-description" data-reveal>An international-level hardware innovation experience bringing together students, innovators and technologists to build functional prototypes for real-world challenges.</p>
+        <div class="hero-actions" data-reveal>
+          <button class="button button-primary register-button" data-registration-trigger data-registration-message="registration-status" type="button" aria-describedby="registration-status">
+            <span>REGISTER YOUR TEAM</span>
+            <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false"><path d="M3.5 10h12m-5-5 5 5-5 5" /></svg>
+          </button>
+          <a class="button button-secondary" href="#challenge">
+            <span>EXPLORE THE CHALLENGE</span>
+            <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false"><path d="M10 3.5v12m-5-5 5 5 5-5" /></svg>
+          </a>
+        </div>
+        <p class="registration-note" id="registration-status" data-registration-status role="status" aria-live="polite">Registration will open once the official Google Form link is configured.</p>
+      </div>
+
+      <figure class="hero-visual animate-fade-in" data-reveal aria-label="Original INVENTIQON microchip and circuit illustration">
+        <svg class="chip-illustration" viewBox="0 0 720 620" role="img" aria-labelledby="chip-title chip-description" focusable="false">
+          <title id="chip-title">INVENTIQON hardware innovation core</title>
+          <desc id="chip-description">A central semiconductor die connected to concentric circuit rings, fine board traces and signal nodes.</desc>
+          <defs>
+            <linearGradient id="die-light" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#FFCC00" stop-opacity="0.2" />
+              <stop offset="1" stop-color="#D70000" stop-opacity="0.04" />
+            </linearGradient>
+            <radialGradient id="core-light">
+              <stop offset="0" stop-color="#FFCC00" stop-opacity="0.16" />
+              <stop offset="1" stop-color="#011539" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <circle class="chip-halo" cx="360" cy="310" r="286" />
+          <circle class="chip-ring chip-ring-outer" cx="360" cy="310" r="251" />
+          <circle class="chip-ring chip-ring-mid" cx="360" cy="310" r="207" />
+          <circle class="chip-ring chip-ring-inner" cx="360" cy="310" r="163" />
+          <circle class="chip-core-glow" cx="360" cy="310" r="160" />
+          <g class="chip-traces">
+            <path d="M111 310H208l28-28h39m334 28h-97l-28-28h-39" />
+            <path d="M132 228h54l30 30h34m280 104h-34l-30 30h-54" />
+            <path d="M194 145h56l34 34m152 262 34 34h56" />
+            <path d="M360 58v83l-24 24v31m48 228v31l24 24v83" />
+            <path d="M152 424h68l28-28h39m266-172h-39l-28-28h-68" />
+            <path d="M507 109h57v57m-344 288v57h57" />
+          </g>
+          <g class="chip-nodes">
+            <circle cx="111" cy="310" r="4" /><circle cx="609" cy="310" r="4" />
+            <circle cx="132" cy="228" r="3.5" /><circle cx="588" cy="362" r="3.5" />
+            <circle cx="194" cy="145" r="3.5" /><circle cx="526" cy="475" r="3.5" />
+            <circle cx="360" cy="58" r="4" /><circle cx="408" cy="562" r="4" />
+            <circle cx="152" cy="424" r="3.5" /><circle cx="568" cy="224" r="3.5" />
+            <circle cx="564" cy="109" r="3.5" /><circle cx="277" cy="509" r="3.5" />
+          </g>
+          <path class="chip-signal" d="M109 310h115l24-24h42" />
+          <g class="chip-die">
+            <rect class="die-frame" x="256" y="206" width="208" height="208" rx="10" />
+            <rect class="die-inner" x="273" y="223" width="174" height="174" rx="4" />
+            <path class="die-cross" d="M300 310h120M360 250v120" />
+            <path class="die-diamond" d="m360 266 44 44-44 44-44-44z" />
+            <circle class="die-node" cx="360" cy="310" r="12" />
+            <text class="die-label" x="360" y="249" text-anchor="middle">INVENTIQON</text>
+            <text class="die-code" x="360" y="382" text-anchor="middle">HARDWARE / 36H</text>
+            <path class="die-pin" d="M278 231h-20m20 20h-20m20 20h-20m20 20h-20m20 20h-20m20 20h-20m20 20h-20m20 20h-20m20 20h-20m184-140h20m-20 20h20m-20 20h20m-20 20h20m-20 20h20m-20 20h20m-20 20h20m-20 20h20m-20 20h20" />
+          </g>
+          <g class="chip-annotation">
+            <text x="78" y="286">SIGNAL / 01</text>
+            <text x="520" y="177">SILICON CORE</text>
+            <text x="505" y="457">I/O MATRIX</text>
+            <text x="301" y="91">36H / BUILD CYCLE</text>
+          </g>
+        </svg>
+        <span class="visual-index visual-index-top" aria-hidden="true">ECE / SYSTEMS</span>
+        <span class="visual-index visual-index-bottom" aria-hidden="true">CORE 01 — TX / 36</span>
+      </figure>
+
+      <dl class="hero-facts glass-panel" aria-label="Event details" data-reveal>
+        <div class="hero-fact">
+          <dt>
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><rect x="4" y="6" width="16" height="14" rx="1" /><path d="M8 3v6m8-6v6M4 11h16" /></svg>
+            EVENT DATES
+          </dt>
+          <dd>19–20 NOVEMBER 2026</dd>
+          <svg class="sponsor-heading-circuit" viewBox="0 0 1440 120" aria-hidden="true" focusable="false"><path d="M0 82h310l38-38h180l26 26h245l38-38h171l29 29h403"/><circle cx="310" cy="82" r="4"/><circle cx="799" cy="70" r="4"/><circle cx="1037" cy="61" r="4"/></svg>
+        </div>
+        <div class="hero-fact">
+          <dt>
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8" /><path d="M12 7v5l3 2" /></svg>
+            BUILD WINDOW
+          </dt>
+          <dd>36 HOURS</dd>
+        </div>
+        <div class="hero-fact">
+          <dt>
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M4 20V8l8-4 8 4v12H4Z" /><path d="M9 20v-6h6v6M8 9h.01M12 9h.01M16 9h.01" /></svg>
+            FORMAT
+          </dt>
+          <dd>ON-CAMPUS</dd>
+        </div>
+        <div class="hero-fact">
+          <dt>
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2" /></svg>
+            LOCATION
+          </dt>
+          <dd>BENGALURU, INDIA</dd>
+        </div>
+      </dl>
+
+      <div class="hero-microstrip" aria-label="Ideate, design, build, demonstrate. System status ready.">
+        <p><span class="microstrip-light" aria-hidden="true"></span> IDEATE <i></i> DESIGN <i></i> BUILD <i></i> DEMONSTRATE</p>
+        <p class="system-ready"><span aria-hidden="true"></span> SYSTEM STATUS: READY</p>
+      </div>
+    </section>
+
+    <section class="challenge-section page-shell" id="challenge" aria-labelledby="challenge-title">
+      <div class="challenge-heading" data-reveal>
+        <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> BEYOND THE BLUEPRINT</p>
+        <h2 id="challenge-title">BUILD WHAT THE<br><span>FUTURE NEEDS</span></h2>
+        <p class="challenge-supporting">Guided by industry mentors and academic experts, participants explore interdisciplinary engineering, collaborative problem-solving and practical hardware development.</p>
+      </div>
+      <div class="challenge-content">
+        <p class="challenge-description" data-reveal>INVENTIQON is an international-level hardware innovation event hosted by Dayananda Sagar University, Bengaluru. It brings together students, innovators and technologists to conceptualize, design and build functional prototypes that address real-world challenges through technology and creativity.</p>
+        <svg class="challenge-schematic" viewBox="0 0 620 86" aria-hidden="true" focusable="false">
+          <path d="M4 44h114l28-28h92l30 30h66l28-28h92l28 28h134" />
+          <path d="M4 70h72l18-18h74m214 0h78l20 18h136" />
+          <circle cx="118" cy="44" r="3" /><circle cx="304" cy="46" r="3" /><circle cx="488" cy="46" r="3" />
+          <circle cx="168" cy="52" r="2.5" /><circle cx="460" cy="52" r="2.5" />
+        </svg>
+        <dl class="challenge-stats glass-panel reveal-stagger" aria-label="Event at a glance">
+          <div class="challenge-stat reveal-on-scroll"><dt>BUILD WINDOW</dt><dd>36 HOURS</dd></div>
+          <div class="challenge-stat reveal-on-scroll"><dt>TEAM FORMAT</dt><dd>3 MEMBERS PER TEAM</dd></div>
+          <div class="challenge-stat reveal-on-scroll"><dt>TECHNOLOGY AREAS</dt><dd>6 TECHNOLOGY DOMAINS</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="domains-section page-shell" id="domains" aria-labelledby="domains-title">
+      <header class="section-heading" data-reveal>
+        <div>
+          <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> THE TECHNOLOGY FRONTIER</p>
+          <h2 id="domains-title">SIX DOMAINS.<br><span>LIMITLESS POSSIBILITIES.</span></h2>
+        </div>
+        <p class="section-intro">Choose a challenge area and turn your engineering ideas into a working hardware prototype.</p>
+      </header>
+      <div class="domain-cards reveal-stagger">
+        <article class="domain-card glass-panel reveal-on-scroll">
+          <div class="domain-card-top"><span class="domain-number">01 / 06</span><svg class="domain-icon" aria-hidden="true" viewBox="0 0 48 48" focusable="false"><path d="M9 38V24h9l5-7h8l5 7h5v14M18 24v8h12v-8M14 38h20M23 17V9h8v8M8 24l-4-4m36 4 4-4"/><circle cx="27" cy="13" r="2"/></svg></div>
+          <h3>Industry 5.0 &amp; Intelligent Automation</h3>
+          <p>Build human-centric industrial technologies, including collaborative robotics, predictive maintenance, intelligent process control and IoT-enabled factory monitoring.</p>
+          <span class="domain-card-signal" aria-hidden="true"></span>
+        </article>
+        <article class="domain-card glass-panel reveal-on-scroll">
+          <div class="domain-card-top"><span class="domain-number">02 / 06</span><svg class="domain-icon" aria-hidden="true" viewBox="0 0 48 48" focusable="false"><rect x="13" y="13" width="22" height="22" rx="2"/><path d="M18 19h12v10H18zM20 23h8m-8 3h5M18 8v5m6-5v5m6-5v5m-12 22v5m6-5v5m6-5v5M8 18h5m-5 6h5m-5 6h5m22-12h5m-5 6h5m-5 6h5"/><circle cx="24" cy="24" r="2"/></svg></div>
+          <h3>Edge AI &amp; Deep Tech</h3>
+          <p>Develop intelligent devices that process data locally using TinyML, embedded AI, real-time computer vision and low-power sensor-driven systems.</p>
+          <span class="domain-card-signal" aria-hidden="true"></span>
+        </article>
+        <article class="domain-card glass-panel reveal-on-scroll">
+          <div class="domain-card-top"><span class="domain-number">03 / 06</span><svg class="domain-icon" aria-hidden="true" viewBox="0 0 48 48" focusable="false"><path d="M8 30h7l5-9h10l5 9h5v8H8zM15 30l3-6m16 6-3-6M14 38a4 4 0 1 0 0-8m21 8a4 4 0 1 0 0-8M22 15a8 8 0 0 1 12-7m-8 7a4 4 0 0 1 6-4"/><circle cx="27" cy="21" r="2"/></svg></div>
+          <h3>Robotics, Autonomous Systems &amp; Smart Mobility</h3>
+          <p>Explore robots, autonomous navigation, smart mobility, intelligent transport and hardware systems that combine sensing, control and autonomy.</p>
+          <span class="domain-card-signal" aria-hidden="true"></span>
+        </article>
+        <article class="domain-card glass-panel reveal-on-scroll">
+          <div class="domain-card-top"><span class="domain-number">04 / 06</span><svg class="domain-icon" aria-hidden="true" viewBox="0 0 48 48" focusable="false"><circle cx="13" cy="13" r="5"/><path d="M13 3v3m0 14v3M3 13h3m14 0h3m-17-7 2 2m10 10 2 2m0-14-2 2M8 18l-2 2M24 30h18v10H24zM28 27v-5h10v5m-7 3v10m6-10v10M5 34h12m-4-4 4 4-4 4"/></svg></div>
+          <h3>Smart Energy &amp; Climate Resilience</h3>
+          <p>Create technologies for solar energy, battery management, smart grids, environmental monitoring and early-warning systems.</p>
+          <span class="domain-card-signal" aria-hidden="true"></span>
+        </article>
+        <article class="domain-card glass-panel reveal-on-scroll">
+          <div class="domain-card-top"><span class="domain-number">05 / 06</span><svg class="domain-icon" aria-hidden="true" viewBox="0 0 48 48" focusable="false"><path d="M24 40S7 30 7 18a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22Z"/><path d="M9 24h8l4-7 6 14 4-7h8"/><circle cx="24" cy="24" r="2"/></svg></div>
+          <h3>HealthTech &amp; Assistive Devices</h3>
+          <p>Design practical healthcare and accessibility technologies, including wearable monitors, rehabilitation aids and assistive hardware.</p>
+          <span class="domain-card-signal" aria-hidden="true"></span>
+        </article>
+        <article class="domain-card glass-panel reveal-on-scroll">
+          <div class="domain-card-top"><span class="domain-number">06 / 06</span><svg class="domain-icon" aria-hidden="true" viewBox="0 0 48 48" focusable="false"><rect x="10" y="13" width="28" height="23" rx="2"/><path d="M16 19h16v11H16zM4 18h6m-6 7h6m-6 7h6m28-14h6m-6 7h6m-6 7h6M19 24h10m-10 3h6M18 8c4-4 8-4 12 0m-9 3c2-2 4-2 6 0"/><circle cx="33" cy="32" r="1.5"/></svg></div>
+          <h3>Next-Gen Hardware &amp; Smart Devices</h3>
+          <p>Experiment with custom PCB designs, connected devices, wireless systems, embedded electronics and unconventional hardware concepts.</p>
+          <span class="domain-card-signal" aria-hidden="true"></span>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience-section page-shell" id="experience" aria-labelledby="experience-title">
+      <header class="section-heading experience-heading" data-reveal>
+        <div>
+          <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> FROM CONCEPT TO HARDWARE</p>
+          <h2 id="experience-title">IDEATE. ENGINEER.<br><span>BUILD. PROVE.</span></h2>
+        </div>
+        <p class="section-intro">A focused path from proposal to working prototype, with shortlisting before the on-campus build round.</p>
+      </header>
+      <ol class="process-list reveal-stagger">
+        <li class="process-step reveal-on-scroll">
+          <span class="process-index">01</span>
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><path d="M20 5v8m0 14v8M5 20h8m14 0h8M10 10l6 6m8 8 6 6m0-20-6 6m-8 8-6 6"/><circle cx="20" cy="20" r="7"/><circle cx="20" cy="20" r="2"/></svg>
+          <h3>Ideate</h3>
+          <p>Teams develop a solution concept and present their proposed approach through a PPT submission.</p>
+        </li>
+        <li class="process-step reveal-on-scroll">
+          <span class="process-index">02</span>
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><path d="m7 21 8 8L33 11"/><path d="M20 5a15 15 0 1 0 15 15"/><circle cx="31" cy="10" r="3"/></svg>
+          <h3>Get shortlisted</h3>
+          <p>Proposals are evaluated by industry experts and academic mentors. Shortlisted teams proceed to the on-campus prototype round.</p>
+        </li>
+        <li class="process-step reveal-on-scroll">
+          <span class="process-index">03</span>
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><rect x="10" y="10" width="20" height="20" rx="2"/><path d="M15 15h10v10H15zM15 4v6m10-6v6M15 30v6m10-6v6M4 15h6m-6 10h6m20-10h6m-6 10h6"/></svg>
+          <h3>Build</h3>
+          <p>Shortlisted teams develop a functional hardware prototype during the 36-hour event window.</p>
+        </li>
+        <li class="process-step reveal-on-scroll">
+          <span class="process-index">04</span>
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><path d="M6 31V9m0 22h29M11 26l7-8 6 4 9-12"/><circle cx="33" cy="10" r="3"/><path d="M13 13h7m-7 4h4"/></svg>
+          <h3>Demonstrate</h3>
+          <p>Teams present their working prototypes and explain their innovation, feasibility, real-world relevance and impact.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="benefits-section page-shell" id="benefits" aria-labelledby="benefits-title">
+      <div class="benefits-heading" data-reveal>
+        <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> MORE THAN A HACKATHON</p>
+        <h2 id="benefits-title">ENGINEERING THAT GOES <span>BEYOND THEORY</span></h2>
+        <p>Put engineering into practice, share perspectives and build with real-world context.</p>
+      </div>
+      <div class="benefit-grid reveal-stagger">
+        <article class="benefit-block reveal-on-scroll">
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><path d="M6 20h8l4-8 7 16 4-8h5"/><circle cx="20" cy="20" r="15"/></svg>
+          <h3>Hands-on Hardware</h3>
+          <p>Turn concepts into functional prototypes using electronics and embedded systems.</p>
+        </article>
+        <article class="benefit-block reveal-on-scroll">
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><path d="M8 32V12l12-6 12 6v20M14 32V20h12v12M14 14h.01M20 14h.01M26 14h.01"/></svg>
+          <h3>Industry Exposure</h3>
+          <p>Gain opportunities to learn from industry mentors and academic experts, subject to the event's confirmed arrangements.</p>
+        </article>
+        <article class="benefit-block reveal-on-scroll">
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><circle cx="14" cy="14" r="5"/><circle cx="27" cy="14" r="5"/><path d="M5 32c0-6 4-9 9-9s9 3 9 9m-3 0c0-5 3-8 7-8s8 3 8 8M19 15h3"/></svg>
+          <h3>Interdisciplinary Collaboration</h3>
+          <p>Work with teammates to solve technical challenges through different perspectives.</p>
+        </article>
+        <article class="benefit-block reveal-on-scroll">
+          <svg aria-hidden="true" viewBox="0 0 40 40" focusable="false"><path d="M20 5 34 13v14l-14 8-14-8V13zM6 13l14 8 14-8M20 21v14m-8-25 14 8"/><circle cx="20" cy="21" r="3"/></svg>
+          <h3>Real-World Impact</h3>
+          <p>Develop practical solutions relevant to industry, sustainability, mobility, healthcare or connected devices.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="snapshot-section page-shell" id="event-snapshot" aria-labelledby="snapshot-title">
+      <div class="snapshot-heading" data-reveal>
+        <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> EVENT PARAMETERS</p>
+        <h2 id="snapshot-title">EVENT SNAPSHOT</h2>
+      </div>
+      <dl class="snapshot-panel glass-panel reveal-stagger">
+        <div class="snapshot-item reveal-on-scroll"><dt>EVENT</dt><dd>INVENTIQON</dd></div>
+        <div class="snapshot-item reveal-on-scroll"><dt>DURATION</dt><dd>36 HOURS</dd></div>
+        <div class="snapshot-item reveal-on-scroll"><dt>DATES</dt><dd>19–20 NOVEMBER 2026</dd></div>
+        <div class="snapshot-item reveal-on-scroll"><dt>MODE</dt><dd>OFFLINE · ON-CAMPUS</dd></div>
+        <div class="snapshot-item reveal-on-scroll"><dt>HOST</dt><dd>DAYANANDA SAGAR UNIVERSITY</dd></div>
+        <div class="snapshot-item reveal-on-scroll"><dt>LOCATION</dt><dd>BENGALURU, INDIA</dd></div>
+        <div class="snapshot-item reveal-on-scroll"><dt>TEAM SIZE</dt><dd>3 MEMBERS</dd></div>
+      </dl>
+    </section>
+
+    <section class="sponsors-section page-shell" id="sponsors" aria-labelledby="sponsors-title">
+      <header class="sponsors-heading" data-reveal>
+        <div class="sponsors-title-copy">
+          <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> POWERING THE NEXT GENERATION</p>
+          <h2 id="sponsors-title">BUILT ON INNOVATION.<br><span>POWERED BY PARTNERS.</span></h2>
+        </div>
+        <p class="sponsors-intro">INVENTIQON brings together emerging engineering talent, practical hardware innovation and industry perspectives. We welcome organizations that want to support the next generation of technology builders.</p>
+      </header>
+      <div class="sponsor-showcase">
+        <p class="sponsor-preview-notice" role="note">DEMO SPONSORS — NOT CONFIRMED. These organizations are illustrative prospects only and are not confirmed sponsors or endorsers of INVENTIQON.</p>
+        <section class="sponsor-category-section" aria-labelledby="sponsor-semiconductor-title">
+          <h3 class="sponsor-category-heading" id="sponsor-semiconductor-title">Semiconductor</h3>
+          <div class="sponsor-card-grid">
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>Texas Instruments</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>NXP Semiconductors</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>STMicroelectronics</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>Microchip Technology</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>Qualcomm</h4></div></article>
+          </div>
+        </section>
+        <section class="sponsor-category-section" aria-labelledby="sponsor-technology-title">
+          <h3 class="sponsor-category-heading" id="sponsor-technology-title">Technology</h3>
+          <div class="sponsor-card-grid">
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>Microsoft</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>AWS</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>NVIDIA</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>GitHub</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>Arduino</h4></div></article>
+          </div>
+        </section>
+        <section class="sponsor-category-section" aria-labelledby="sponsor-innovation-title">
+          <h3 class="sponsor-category-heading" id="sponsor-innovation-title">Innovation &amp; Community</h3>
+          <div class="sponsor-card-grid">
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>IEEE</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>Unstop</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>HackerEarth</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>DigitalOcean</h4></div></article>
+            <article class="sponsor-card glass-panel"><p class="sponsor-card-category">DEMO PROSPECT</p><div class="sponsor-card-details"><h4>Wadhwani Foundation</h4></div></article>
+          </div>
+        </section>
+      </div>
+      <aside class="partnership-cta" aria-labelledby="partnership-title" data-reveal>
+        <div class="partnership-copy">
+          <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> PARTNER WITH INVENTIQON</p>
+          <h3 id="partnership-title">LET'S BUILD THE FUTURE TOGETHER</h3>
+          <p>Interested in supporting emerging hardware innovators? Connect with the INVENTIQON organizing team to explore sponsorship and collaboration opportunities.</p>
+        </div>
+        <div class="partnership-action">
+          <a class="button button-primary partnership-button" href="contact.html" aria-describedby="partnership-status">
+            <span>BECOME A SPONSOR</span>
+            <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false"><path d="M3.5 10h12m-5-5 5 5-5 5" /></svg>
+          </a>
+          <p class="partnership-status" id="partnership-status">Contact the INVENTIQON team to discuss sponsorship opportunities.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="closing-section page-shell" id="register" aria-labelledby="closing-title">
+      <div class="closing-signal" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="closing-content" data-reveal>
+        <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> YOUR NEXT BREAKTHROUGH STARTS HERE</p>
+        <h2 id="closing-title">READY TO BUILD<br><span>SOMETHING REAL?</span></h2>
+        <p>Bring your ideas, assemble your team and take on a 36-hour hardware engineering challenge.</p>
+        <div class="closing-actions">
+          <button class="button button-primary register-button" data-registration-trigger data-registration-message="closing-registration-status" type="button" aria-describedby="closing-registration-status">
+            <span>REGISTER YOUR TEAM</span>
+            <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false"><path d="M3.5 10h12m-5-5 5 5-5 5" /></svg>
+          </button>
+          <a class="button button-secondary" href="event.html"><span>EXPLORE THE EVENT</span><svg aria-hidden="true" viewBox="0 0 20 20" focusable="false"><path d="M3.5 10h12m-5-5 5 5-5 5" /></svg></a>
+        </div>
+        <p class="registration-note" id="closing-registration-status" data-registration-status role="status" aria-live="polite">Registration will open once the official Google Form link is configured.</p>
+      </div>
+      <p class="closing-index" aria-hidden="true">INVENTIQON / 36H / BENGALURU</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <section class="footer-brand-area" aria-label="About INVENTIQON">
+        <a class="footer-brand" href="index.html"><img class="footer-brand-logo" src="assets/images/inventiqon-logo.svg" alt="INVENTIQON Logo"></a>
+        <div class="institution-logos footer-institution-logos">
+          <span class="institution-logo-item"><img class="institution-logo-image" src="assets/images/logos/dsu-logo.png" alt="Dayananda Sagar University logo"><span class="institution-logo-name"></span></span>
+          <span class="institution-logo-item"><img class="institution-logo-image" src="assets/images/logos/ece-club-logo.png" alt="ECE Technical Club logo"><span class="institution-logo-name"></span></span>
+        </div>
+        <p class="footer-tagline">36 HOURS. REAL HARDWARE. REAL IMPACT.</p>
+        <p class="footer-description">A hardware innovation challenge bringing engineering ideas to life at Dayananda Sagar University, Bengaluru.</p>
+      </section>
+      <nav class="footer-column" aria-label="Quick links">
+        <h2>QUICK LINKS</h2>
+        <a href="index.html">Home</a><a href="event.html">Event</a><a href="timeline.html">Timeline</a><a href="committee.html">Committee</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+      </nav>
+      <section class="footer-column" aria-label="Event details">
+        <h2>EVENT DETAILS</h2>
+        <p>19–20 November 2026</p><p>36-Hour Hardware Hackathon</p><p>Dayananda Sagar University, Bengaluru</p>
+        <a class="footer-location-link" href="https://share.google/YrrwAQHzx1WKD2Qam" target="_blank" rel="noopener noreferrer">VIEW CAMPUS LOCATION <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="footer-column footer-connect" aria-label="Connect with the organizing team">
+        <h2>CONNECT</h2>
+        <p>President · Sangamesh</p><a href="mailto:ENG24EC0033@dsu.edu.in">eng24ec0033@dsu.edu.in</a>
+        <p>Operational Head · DS Kumar</p><a href="mailto:ENG24EC0062@dsu.edu.in">eng24ec0062@dsu.edu.in</a>
+        <a class="footer-contact-link" href="contact.html">General contact <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+    <div class="footer-bottom"><p>© 2026 INVENTIQON. All rights reserved.</p><p>Built for hardware innovation.</p><a class="footer-back-top" href="#page-top" aria-label="Back to top">BACK TO TOP <span aria-hidden="true">↑</span></a></div>
+  </footer>
+</body>
+</html>
