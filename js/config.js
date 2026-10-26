@@ -86,11 +86,11 @@ window.INVENTIQON_CONFIG = {
     }
   ],
   domains: [
-    "Industry 5.0 & Intelligent Automation",
-    "Edge AI & Deep Tech",
-    "Robotics, Autonomous Systems & Smart Mobility",
-    "Smart Energy & Climate Resilience",
-    "HealthTech & Assistive Devices",
-    "Next-Gen Hardware & Smart Devices"
+    "Mechavers",
+    "Silicore",
+    "Wavenex",
+    "Neuronix",
+    "Nexusgrid",
+    "Circuitshield"
   ]
 };

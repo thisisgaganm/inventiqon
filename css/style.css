@@ -141,7 +141,7 @@ button:focus-visible {
   position: sticky;
   z-index: 12;
   top: 0.75rem;
-  min-height: 4.25rem;
+  min-height: 7rem;
   margin-top: 0.75rem;
   padding: 0.45rem 0.55rem 0.45rem 1rem;
   display: grid;
@@ -164,47 +164,42 @@ button:focus-visible {
 }
 
 .brand {
+  min-width: max-content;
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 0.65rem;
   text-decoration: none;
 }
 
+.brand-logos {
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: clamp(0.8rem, 1.2vw, 1.4rem);
+}
+
 .brand-logo {
-  width: clamp(8.5rem, 14vw, 11.25rem);
-  height: 3rem;
-  flex: 0 1 auto;
-  object-fit: contain;
-}
-
-.institution-logos {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-}
-
-.institution-logo-item {
-  min-width: 0;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.institution-logo-image {
-  width: 4.5rem;
-  height: 2.8rem;
+  display: block;
+  height: 6rem;
+  max-width: none;
+  max-height: none;
   flex: 0 0 auto;
   object-fit: contain;
 }
 
-.institution-logo-name {
-  max-width: 6rem;
-  color: var(--color-cream);
-  font-family: var(--font-mono);
-  font-size: 0.4rem;
-  letter-spacing: 0.055em;
-  line-height: 1.35;
+.brand-logo-dsu {
+  width: 9.2rem;
+  max-width: 9.2rem;
+}
+
+.brand-logo-ece {
+  width: 6.4rem;
+  max-width: 6.4rem;
+}
+
+.brand-logo-inventiqon {
+  width: 11.6rem;
+  max-width: 11.6rem;
 }
 
 .brand-copy {
@@ -1082,6 +1077,86 @@ h1 {
   transition: transform var(--motion-base) var(--ease-standard), filter var(--motion-base) ease;
 }
 
+.domain-visual--mechavers .domain-gear {
+  transform-box: view-box;
+  transform-origin: 24px 24px;
+  animation: domain-gear-turn 18s linear infinite;
+}
+
+.domain-visual--silicore .domain-chip-core {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: domain-chip-pulse 2.8s ease-in-out infinite;
+}
+
+.domain-visual--wavenex .domain-wave {
+  stroke-dasharray: 5 3;
+  animation: domain-wave-flow 2.4s linear infinite;
+}
+
+.domain-visual--wavenex .domain-wave--middle {
+  animation-delay: -1.2s;
+}
+
+.domain-visual--neuronix .domain-neural-links path {
+  stroke-dasharray: 3 4;
+  animation: domain-neural-flow 3.6s linear infinite;
+}
+
+.domain-visual--neuronix .domain-neural-nodes circle,
+.domain-visual--nexusgrid .domain-grid-nodes circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: domain-node-pulse 2.4s ease-in-out infinite;
+}
+
+.domain-visual--neuronix .domain-neural-nodes circle:nth-child(even),
+.domain-visual--nexusgrid .domain-grid-nodes circle:nth-child(even) {
+  animation-delay: -1.2s;
+}
+
+.domain-visual--nexusgrid .domain-grid-lines {
+  animation: domain-grid-breathe 4s ease-in-out infinite;
+}
+
+.domain-visual--circuitshield .domain-shield-outline {
+  stroke-dasharray: 4 2;
+  animation: domain-shield-glow 3s ease-in-out infinite;
+}
+
+.domain-visual--circuitshield .domain-shield-traces {
+  stroke-dasharray: 3 2;
+  animation: domain-neural-flow 3.2s linear infinite;
+}
+
+@keyframes domain-gear-turn {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes domain-chip-pulse {
+  50% { transform: scale(1.65); opacity: 0.55; }
+}
+
+@keyframes domain-wave-flow {
+  to { stroke-dashoffset: -16; }
+}
+
+@keyframes domain-neural-flow {
+  to { stroke-dashoffset: -14; }
+}
+
+@keyframes domain-node-pulse {
+  50% { transform: scale(1.5); opacity: 0.62; }
+}
+
+@keyframes domain-grid-breathe {
+  50% { opacity: 0.45; }
+}
+
+@keyframes domain-shield-glow {
+  50% { filter: drop-shadow(0 0 3px rgba(255, 204, 0, 0.65)); }
+}
+
 .domain-card:hover .domain-icon {
   transform: translateY(-3px);
   filter: drop-shadow(0 0 5px rgba(255, 204, 0, 0.28));
@@ -1424,6 +1499,53 @@ h1 {
   background: linear-gradient(112deg, rgba(255, 204, 0, 0.055), rgba(255, 255, 255, 0.045) 38%, rgba(1, 21, 57, 0.55));
   color: inherit;
   text-decoration: none;
+}
+
+.title-sponsor-text-only {
+  min-height: 14rem;
+  grid-template-columns: minmax(0, 1fr);
+  text-align: center;
+}
+
+.title-sponsor-panel.title-sponsor-text-only .sponsor-card-details {
+  grid-row: 2;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.title-sponsor-panel.title-sponsor-text-only .sponsor-card-details h3 {
+  color: var(--color-gold);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  letter-spacing: 0.02em;
+}
+
+.title-sponsor-mark {
+  width: clamp(4rem, 9vw, 6.5rem);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 204, 0, 0.42);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 204, 0, 0.13), rgba(1, 21, 57, 0.72));
+  box-shadow: 0 0 1.4rem rgba(255, 204, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.title-sponsor-mark img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .title-sponsor-panel::after {
@@ -1857,17 +1979,21 @@ a.sponsor-card:hover {
 .footer-main {
   padding-block: 3.2rem 2.7rem;
   display: grid;
-  grid-template-columns: minmax(14rem, 1.25fr) repeat(3, minmax(9rem, 0.75fr));
+  grid-template-columns: minmax(16.8rem, 1.25fr) repeat(3, minmax(9rem, 0.75fr));
   gap: 2rem;
 }
 
 .footer-brand-area {
+  min-width: 0;
   max-width: 24rem;
 }
 
-.footer-institution-logos {
-  margin-top: 1rem;
+.footer-brand-logos {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
+  gap: clamp(0.8rem, 2vw, 1.5rem);
 }
 
 .site-footer p,
@@ -1884,9 +2010,17 @@ a.sponsor-card:hover {
 }
 
 .footer-brand-logo {
-  width: 12rem;
+  display: block;
+  width: 16.8rem;
   height: auto;
   max-width: 100%;
+  object-fit: contain;
+}
+
+.footer-naac-logo {
+  width: 4rem;
+  height: 3rem;
+  flex: 0 0 auto;
   object-fit: contain;
 }
 
@@ -2300,19 +2434,26 @@ a.sponsor-card:hover {
 }
 
 .event-domain-grid {
+  min-width: 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.25rem 1rem;
 }
 
 .event-domain-card {
   min-width: 0;
   min-height: 23rem;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-wrap: anywhere;
 }
 
 .event-domain-top {
   width: 100%;
-  margin-bottom: 1.3rem;
+  min-height: 2.7rem;
+  margin-bottom: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2341,6 +2482,7 @@ a.sponsor-card:hover {
 }
 
 .event-domain-card h3 {
+  min-height: 2.85rem;
   margin: 0;
   color: var(--color-white);
   font-family: var(--font-display);
@@ -2350,7 +2492,7 @@ a.sponsor-card:hover {
 }
 
 .event-domain-card p {
-  margin: 0.75rem 0 0;
+  margin: 0.85rem 0 0;
   color: var(--color-ink-soft);
   font-size: 0.84rem;
   line-height: 1.68;

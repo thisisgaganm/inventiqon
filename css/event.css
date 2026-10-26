@@ -5,6 +5,16 @@
 
   .event-domain-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .event-domain-card {
+    min-height: 22rem;
+    padding: 1.25rem;
+  }
+
+  .event-domain-card h3 {
+    min-height: 2.7rem;
   }
 
   .evaluation-grid {
@@ -219,8 +229,17 @@
   }
 
   .event-domain-card {
+    min-height: 18rem;
+    padding: 1rem;
+  }
+
+  .event-domain-top {
+    min-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .event-domain-card h3 {
     min-height: 0;
-    padding: 1.2rem;
   }
 
   .format-facts div {

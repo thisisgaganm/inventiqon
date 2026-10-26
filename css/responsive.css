@@ -1,37 +1,33 @@
 @media (max-width: 860px) {
   .site-header {
-    min-height: 3.9rem;
+    min-height: 5.5rem;
     padding: 0.4rem 0.45rem 0.4rem 0.9rem;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 0.6rem;
     border-radius: 1.25rem;
   }
 
-  .brand-context {
-    font-size: 0.48rem;
-  }
-
   .brand-logo {
-    width: clamp(7.25rem, 23vw, 9rem);
-    height: 2.55rem;
+    height: 3rem;
   }
 
-  .institution-logos {
-    gap: 0.35rem;
+  .brand-logos {
+    gap: 0.55rem;
   }
 
-  .institution-logo-item {
-    gap: 0.2rem;
+  .brand-logo-dsu {
+    width: 4.6rem;
+    max-width: 4.6rem;
   }
 
-  .institution-logo-image {
+  .brand-logo-ece {
     width: 3.2rem;
-    height: 2rem;
+    max-width: 3.2rem;
   }
 
-  .institution-logo-name {
-    max-width: 4rem;
-    font-size: 0.35rem;
+  .brand-logo-inventiqon {
+    width: 5.8rem;
+    max-width: 5.8rem;
   }
 
   .menu-toggle {
@@ -151,7 +147,7 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem 1.4rem;
@@ -161,8 +157,22 @@
     grid-column: 1 / -1;
   }
 
+  .footer-brand-logos {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .footer-brand-logo {
+    width: min(16.8rem, 62vw);
+  }
+
+  .footer-naac-logo {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
   .footer-bottom {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) auto;
   }
 
   .footer-bottom > p:nth-child(2) {
@@ -177,50 +187,67 @@
   }
 }
 
+@media (min-width: 861px) and (max-width: 1100px) {
+  .site-header {
+    min-height: 6rem;
+  }
+
+  .brand-logos {
+    gap: 0.75rem;
+  }
+
+  .brand-logo {
+    height: 4.5rem;
+  }
+
+  .brand-logo-dsu {
+    width: 6.9rem;
+    max-width: 6.9rem;
+  }
+
+  .brand-logo-ece {
+    width: 4.8rem;
+    max-width: 4.8rem;
+  }
+
+  .brand-logo-inventiqon {
+    width: 8.7rem;
+    max-width: 8.7rem;
+  }
+}
+
 @media (max-width: 420px) {
-  .footer-main {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.7rem;
-  }
-
-  .footer-brand-area {
-    grid-column: 1;
-  }
-
   .footer-bottom {
     grid-template-columns: minmax(0, 1fr) auto;
     font-size: 0.59rem;
   }
 
-  .brand-context {
-    display: none;
-  }
-
-  .brand {
-    gap: 0.35rem;
+  .brand-logos {
+    gap: 0.3rem;
   }
 
   .brand-logo {
-    width: clamp(6.6rem, 28vw, 7.6rem);
-    height: 2.2rem;
+    height: 2.6rem;
   }
 
-  .institution-logos {
-    gap: 0.25rem;
+  .brand-logo-dsu {
+    width: 3.7rem;
+    max-width: 3.7rem;
   }
 
-  .institution-logo-item {
-    gap: 0.14rem;
+  .brand-logo-ece {
+    width: 2.6rem;
+    max-width: 2.6rem;
   }
 
-  .institution-logo-image {
-    width: 2.7rem;
-    height: 1.7rem;
+  .brand-logo-inventiqon {
+    width: 4.7rem;
+    max-width: 4.7rem;
   }
 
-  .institution-logo-name {
-    max-width: 3rem;
-    font-size: 0.3rem;
+  .site-header {
+    min-height: 4.8rem;
+    padding-inline: 0.65rem;
   }
 
   .hero-actions {
@@ -230,6 +257,42 @@
 
   .hero-actions .button {
     width: 100%;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {
+  .brand-logo {
+    height: 2.8rem;
+  }
+
+  .brand-logo-dsu {
+    width: 4.2rem;
+    max-width: 4.2rem;
+  }
+
+  .brand-logo-ece {
+    width: 3rem;
+    max-width: 3rem;
+  }
+
+  .brand-logo-inventiqon {
+    width: 5.2rem;
+    max-width: 5.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.7rem;
+  }
+
+  .footer-brand-area {
+    grid-column: 1;
+  }
+
+  .footer-brand-logos {
+    gap: 0.65rem;
   }
 }
 
