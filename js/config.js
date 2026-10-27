@@ -1,6 +1,6 @@
 /* Update these values as event details become available. */
-window.INVENTIQON_CONFIG = {
-  eventName: "INVENTIQON",
+window.VIDYUTSPANDA_CONFIG = {
+  eventName: "VidyutSpanda",
   host: "Dayananda Sagar University",
   city: "Bengaluru",
   format: "Offline, on-campus hardware prototype hackathon",

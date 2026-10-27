@@ -1,5 +1,5 @@
 (() => {
-  const config = window.INVENTIQON_CONFIG || {};
+  const config = window.VIDYUTSPANDA_CONFIG || {};
   const currentPage = document.body.dataset.page;
   const currentFile = window.location.pathname.split("/").pop().toLowerCase() || (currentPage === "home" ? "index.html" : `${currentPage}.html`);
 

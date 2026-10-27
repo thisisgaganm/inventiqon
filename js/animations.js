@@ -30,7 +30,7 @@
 
     const announcement = document.querySelector("[data-loader-announcement]");
     if (announcement) {
-      announcement.textContent = "INVENTIQON is ready.";
+      announcement.textContent = "VidyutSpanda is ready.";
     }
 
     loader.addEventListener("transitionend", (event) => {
@@ -75,7 +75,7 @@
       }
       const announcement = document.querySelector("[data-loader-announcement]");
       if (announcement) {
-        announcement.textContent = "INVENTIQON is ready.";
+        announcement.textContent = "VidyutSpanda is ready.";
       }
       return;
     }
