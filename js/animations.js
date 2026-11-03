@@ -53,6 +53,22 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
+            const timelineRow = entry.target.matches(".timeline-item")
+              ? entry.target
+              : entry.target.closest(".timeline-item");
+            const timelineList = timelineRow?.closest(".timeline-list");
+
+            if (timelineList && timelineRow) {
+              const rows = timelineList.querySelectorAll(".timeline-item");
+              const progress = (Array.prototype.indexOf.call(rows, timelineRow) + 1) / rows.length;
+              const previousProgress = Number(timelineList.dataset.timelineProgress || 0);
+
+              if (progress > previousProgress) {
+                timelineList.dataset.timelineProgress = String(progress);
+                timelineList.style.setProperty("--timeline-progress", String(progress));
+              }
+            }
+
             activeObserver.unobserve(entry.target);
           }
         });
