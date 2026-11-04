@@ -357,3 +357,314 @@
     grid-column: auto;
   }
 }
+
+.event-selection {
+  position: relative;
+  isolation: isolate;
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.event-selection-heading {
+  max-width: 46rem;
+  margin-bottom: 2rem;
+}
+
+.event-selection-heading h1 {
+  margin: 0.8rem 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: 0.015em;
+  line-height: 0.98;
+}
+
+.event-selection-heading h1 span,
+.ideathon-detail-heading h1 {
+  color: var(--color-gold);
+}
+
+.event-selection-heading > p:last-child,
+.ideathon-detail-heading > p:not(.eyebrow, .event-choice-status) {
+  max-width: 39rem;
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.event-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.event-choice-card {
+  --choice-color: var(--color-gold);
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  min-height: 21rem;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  overflow: hidden;
+  border: 1px solid rgba(255, 204, 0, 0.32);
+  border-radius: 1rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.055), transparent 58%),
+    rgba(1, 21, 57, 0.78);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 1rem 2.8rem rgba(0,  0, 0, 0.16);
+  transition: transform var(--motion-base) var(--ease-standard), border-color var(--motion-base) ease, box-shadow var(--motion-base) ease;
+}
+
+.event-choice-card::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 0 74%, rgba(255, 255, 255, 0.045) 74.2% 74.5%, transparent 74.7%),
+    linear-gradient(0deg, transparent 0 70%, rgba(255, 255, 255, 0.035) 70.2% 70.5%, transparent 70.7%),
+    radial-gradient(circle at 74% 70%, var(--choice-color) 0 2px, transparent 3px);
+  content: "";
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.event-choice-card::after {
+  position: absolute;
+  top: 5.3rem;
+  right: -2.2rem;
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid color-mix(in srgb, var(--choice-color), transparent 66%);
+  border-radius: 1.25rem;
+  content: "";
+  opacity: 0.42;
+  pointer-events: none;
+  transform: rotate(45deg);
+  transition: transform var(--motion-slow) var(--ease-standard), opacity var(--motion-base) ease;
+}
+
+.event-choice-card:hover,
+.event-choice-card:focus-within {
+  border-color: var(--choice-color);
+  box-shadow: 0 0 1.8rem color-mix(in srgb, var(--choice-color), transparent 84%), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+}
+
+.event-choice-card:hover::after,
+.event-choice-card:focus-within::after {
+  opacity: 0.8;
+  transform: rotate(58deg) scale(1.08);
+}
+
+.ideathon-choice {
+  --choice-color: #ff6868;
+  border-color: rgba(215, 0, 0, 0.46);
+}
+
+.event-choice-meta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  color: var(--color-ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.event-choice-status {
+  color: #ff7777;
+  font-weight: 700;
+}
+
+.event-choice-card h2 {
+  position: relative;
+  z-index: 1;
+  margin: 2.25rem 0 0.45rem;
+  color: var(--choice-color);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  line-height: 1;
+}
+
+.event-choice-subtitle {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.event-choice-description {
+  position: relative;
+  z-index: 1;
+  max-width: 39rem;
+  margin: 0.9rem 0 1.45rem;
+  color: var(--color-ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.event-choice-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.event-detail-view[hidden],
+.event-selection[hidden] {
+  display: none !important;
+}
+
+.event-detail-view.is-entering {
+  animation: event-detail-arrive 420ms var(--ease-standard) both;
+}
+
+.ideathon-detail-heading {
+  max-width: 56rem;
+}
+
+.ideathon-detail-heading .event-choice-status {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+}
+
+.ideathon-detail-heading h1 {
+  margin: 0.5rem 0 0.8rem;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+}
+
+.ideathon-detail-heading > .button {
+  margin-top: 1.5rem;
+}
+
+.ideathon-milestones {
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+.ideathon-milestone {
+  position: relative;
+  min-width: 0;
+  min-height: 10.5rem;
+  padding: 1.35rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 204, 0, 0.2);
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(145deg, rgba(215, 0, 0, 0.08), transparent 62%),
+    var(--color-glass);
+}
+
+.ideathon-milestone > span {
+  color: var(--color-copper);
+  font-family: var(--font-mono);
+  font-size: 0.59rem;
+  letter-spacing: 0.08em;
+}
+
+.ideathon-milestone h3 {
+  margin: 1.2rem 0 0.45rem;
+  color: var(--color-cream);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.ideathon-milestone p {
+  margin: 0;
+  color: var(--color-gold);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.ideathon-rules-panel {
+  margin-top: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.ideathon-rules-panel .event-checklist {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ideathon-back-button {
+  margin-top: 1.5rem;
+}
+
+@keyframes event-detail-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .event-choice-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ideathon-milestones {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .event-choice-card {
+    min-height: 0;
+    padding: 1.2rem;
+  }
+
+  .event-choice-card h2 {
+    margin-top: 1.7rem;
+  }
+
+  .event-choice-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .event-choice-actions .button {
+    width: 100%;
+  }
+
+  .ideathon-milestones,
+  .ideathon-rules-panel .event-checklist {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ideathon-milestone {
+    min-height: 8.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-choice-card,
+  .event-choice-card::after {
+    transition: none;
+  }
+
+  .event-detail-view.is-entering {
+    animation: none;
+  }
+}

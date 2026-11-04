@@ -2939,3 +2939,78 @@ a.sponsor-card:hover {
 @keyframes event-ring-rotate {
   to { transform: rotate(360deg); }
 }
+
+.announcement-banner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-width: 0;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-block: 1px solid rgba(255, 204, 0, 0.32);
+  background:
+    linear-gradient(90deg, rgba(215, 0, 0, 0.2), transparent 28%, rgba(255, 204, 0, 0.08)),
+    rgba(1, 21, 57, 0.86);
+  box-shadow: inset 0 0.25rem 1.1rem rgba(215, 0, 0, 0.055), 0 0.6rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.announcement-track {
+  width: max-content;
+  display: flex;
+  animation: announcement-marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.announcement-message {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0.82rem 3.5rem 0.82rem var(--page-gutter);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-cream);
+  font-size: clamp(0.72rem, 1.05vw, 0.88rem);
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.announcement-message svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.announcement-message strong {
+  color: var(--color-gold);
+  letter-spacing: 0.04em;
+}
+
+@keyframes announcement-marquee {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-track {
+    width: 100%;
+    animation: none;
+    will-change: auto;
+  }
+
+  .announcement-message {
+    width: 100%;
+    padding-inline: var(--page-gutter);
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+  .announcement-message[aria-hidden="true"] {
+    display: none;
+  }
+}
